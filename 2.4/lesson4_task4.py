@@ -22,7 +22,7 @@ try:
     browser.find_element(By.CSS_SELECTOR, "#answer").send_keys(xvar)
     button = browser.find_element(By.CSS_SELECTOR, "#solve")
     button.click()
-    time.sleep(5)
+    time.sleep(2)
     alert2 = browser.switch_to.alert.text
     addin = alert2.split(': ')[-1]
     pyperclip.copy(addin)
